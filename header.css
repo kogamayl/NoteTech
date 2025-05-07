@@ -1,0 +1,25 @@
+header {
+    background-color: #e4e2dd;
+}
+
+.container {
+    max-width: 960px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#logo {
+    width: 100px;
+}
+
+.container a {
+    text-decoration: none;
+    color: #000;
+    margin-right: 20px;
+}
+
+.redesSociais {
+    width: 20px;
+}
