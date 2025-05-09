@@ -1,0 +1,63 @@
+header {
+    background-color: #e4e2dd;
+}
+
+header h2 {
+    text-align: center;
+    padding-top: 30px;
+}
+
+.container {
+    max-width: 960px;
+    margin: auto;
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.logo {
+    max-width: 300px;
+}
+
+.login {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    padding: 30px;
+}
+
+.login h3 {
+    text-align: center;
+}
+
+.login input, button {
+    margin: 10px 0;
+    height: 35px;
+    width: 250px;
+    outline: none;
+}
+
+.login button {
+    background-color: #ddd1b2;
+    border: #e4e2dd;
+}
+
+.login a {
+    text-align: end;
+    text-decoration: none;
+    font-size: 13px;
+    color: #605f61c7;
+}
+
+.cadastro {
+    text-align: center;
+    font-size: 16px;
+    margin-top: 5px;
+}
+
+.cadastro a {
+    text-align: end;
+    text-decoration: none;
+    color: #000000c7;
+}
