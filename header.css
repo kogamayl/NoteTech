@@ -7,16 +7,19 @@ header {
 .container {
     max-width: 960px;
     margin: auto;
+    flex-wrap: wrap;
 }
 
 .headerCima {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .headerTop {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     margin-left: 30px;
     padding-top: 10px;
@@ -41,10 +44,15 @@ header {
     margin-right: 5px;
 }
 
+.span {
+    background-color: red;
+}
+
 .login {
     text-decoration: none;
     color: #000;
     margin-right: 5px;
+    flex-wrap: wrap;
 }
 
 /* Parte de baixo do Header */
@@ -52,17 +60,56 @@ header {
 .pesquisa {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
 #logo {
-    width: 100px;
+    max-width: 100px;
 }
 
 .inputButton {
-    margin: 0 30px;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 5px;
 }
 
-.input {
+.inputButton input {
     width: 300px;
+    height: 25px;
+    border: none;
+    outline: none;
+    flex-wrap: wrap;
+}
+
+.inputButton button {
+    height: 25px;
+    border-radius: 5px;
+    border: #e4e2dd solid;
+    background-color: #e4e2dd;
+}
+
+.carrinho {
+    width: 25px;
+}
+
+@media (max-width: 570px) {
+    .headerTop {
+        margin-left: 5px;
+    }
+
+    .inputButton input{
+        max-width: 100px;
+    }
+
+    #logo {
+        max-width: 60px;
+    }
+}
+
+@media (max-width: 406px) {
+    .headerCima {
+        display: flex;
+        justify-content: center;
+    }
 }
