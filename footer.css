@@ -49,3 +49,16 @@ footer {
     text-align: center;
     padding: 15px 0;
 }
+
+@media (max-width: 768px) {
+    .footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .pagamento img,
+    .redesSociaisFooter img {
+        margin: 0 5px;
+    }
+}

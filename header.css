@@ -28,7 +28,7 @@ header {
 .headerTop span {
     background-color: #33323271;
     width: 1px;
-    height:13px;
+    height: 13px;
     margin-right: 5px;
     display: inline-block;
 }
@@ -36,12 +36,22 @@ header {
 .link {
     text-decoration: none;
     color: #000;
-    margin-right: 5px;
+    margin: 0 10px;
+}
+
+.link:hover {
+    color: #0077cc;
+    text-decoration: none;
 }
 
 .redesSociais {
     width: 20px;
-    margin-right: 5px;
+    margin: 0 10px;
+}
+
+.redesSociais:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
 }
 
 .login {
@@ -79,10 +89,19 @@ header {
 }
 
 .inputButton button {
-    height: 25px;
+    height: 30px;
     border-radius: 5px;
-    border: #e4e2dd solid;
-    background-color: #e4e2dd;
+    border: none;
+    background-color: #0077cc;
+    color: #fff;
+    padding: 0 10px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.inputButton button:hover {
+    background-color: #005fa3;
+    cursor: pointer;
 }
 
 .carrinho {
@@ -92,14 +111,21 @@ header {
 @media (max-width: 570px) {
     .headerTop {
         margin-left: 5px;
+        justify-content: center;
     }
 
-    .inputButton input{
-        max-width: 100px;
+    .inputButton input {
+        max-width: 180px;
+        margin-bottom: 5px;
+    }
+
+    .pesquisa {
+        flex-direction: column;
+        gap: 10px;
     }
 
     #logo {
-        max-width: 60px;
+        max-width: 100px;
     }
 }
 
