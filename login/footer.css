@@ -1,14 +1,12 @@
-footer {
-    background-color: #e4e2dd;
-}
-
-.container {
-    
+.containerFooter {
+    max-width: 960px;
+    margin: auto;
 }
 
 .footer {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .footer h3 {
@@ -19,19 +17,18 @@ footer {
 .sobreNoteTech {
     display: flex;
     flex-direction: column;
-    text-align: center;
+    align-items: center;
 }
 
-.sobreNoteTech h3 {
-    font-size: 15px;
-}
-
-.sobreNoteTech a {
+.link {
+    text-decoration: none;
+    color: #242424;
     font-size: 12px;
 }
 
 .pagamento {
-    width: 150px;
+    max-width: 150px;
+    margin: 10px 0;
 }
 
 .pagamento img {
